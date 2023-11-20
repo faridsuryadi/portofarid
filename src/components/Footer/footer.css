@@ -1,0 +1,16 @@
+
+.text {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+
+  
+  .text:hover{
+    color: #ff5733; 
+    transform: scale(1.2) 
+  }
+  
