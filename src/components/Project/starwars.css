@@ -1,0 +1,78 @@
+.star-wars-container {
+    height: 87vh;
+    background: black;
+    color: yellow;
+    overflow: hidden;
+    perspective: 500px;
+  }
+  
+  .star-wars {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(20deg);
+  }
+  
+  .title {
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-family: "Star Wars", sans-serif;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5em; 
+      }
+
+  }
+  
+
+  .subtitle {
+    font-size: 1.5em;
+    font-family: "Star Wars", sans-serif;
+    @media screen and (max-width: 768px) {
+        font-size: 1.2em; 
+      }
+
+  }
+  .stop-animation {
+    animation-play-state: paused;
+}
+.crawl-container:active{
+    animation-play-state: paused;
+}
+.crawl-container:hover{
+cursor:pointer;}
+  .crawl-container {
+    max-width: 800px;
+    margin: 0 auto;
+    white-space: pre-line;
+    font-size: 3.5em;
+    font-weight: bold;
+    transform-origin: 50% 100%;
+    text-align: justify;
+    font-family: 'Trade Gothic LT Std', sans-serif;
+    animation: crawlAnimationDesktop 25s linear infinite; 
+
+    @media screen and (max-width: 767px) {
+      animation: crawlAnimationMobile 18s linear infinite; 
+      font-size: 1.6em;
+      width: 300px;
+    }
+  }
+  
+  @keyframes crawlAnimationDesktop {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes crawlAnimationMobile {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  

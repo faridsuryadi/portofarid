@@ -1,13 +1,24 @@
 
 .text {
     font-size: 16px;
-    color: #333;
+    color: white;
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
+.text2 {
+    font-size: 16px;
+    color: white;
+  }
   
-
+  .footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5rem;
+    z-index: 2; 
+  }
   
   .text:hover{
     color: #ff5733; 

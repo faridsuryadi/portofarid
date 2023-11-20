@@ -1,18 +1,17 @@
 import { Box, Heading } from "@chakra-ui/react"
 import { Footer } from "../../components/Footer"
+import { Project } from "../../components/Project"
 
 export const HomeView = () =>{
     return (
         <>
-        <Box minH={"100vh"} display={"flex"} flexDir={"column"}>
-            <Box flex={1}>
-
-        <Heading>
-            Muhammad Farid Suryadi
-        </Heading>
+        <Box display={"flex"} flexDir={"column"}>
+            <Box flex={1} position={"relative"}>
+        <Project/>
+        <Project/>
             </Box>
-        <Footer/>
         </Box>
+        {/* <Footer/> */}
         </>
     )
 }
